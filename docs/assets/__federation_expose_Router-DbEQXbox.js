@@ -233,7 +233,7 @@ const {createWebHistory,createRouter} = await importShared('vue-router');
 const __federation_var_remote_appstore = await __federation_method_getRemote("remote_app" , "./store");
  let store = __federation_method_unwrapDefault(__federation_var_remote_appstore); 
 const router = createRouter({
-  history: createWebHistory("https://asyrafbilalfbj.github.io/guest-book-host/"),
+  history: createWebHistory("/guest-book-host/"),
   routes: [
     {
       path: "/login",
