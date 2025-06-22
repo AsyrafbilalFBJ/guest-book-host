@@ -1,5 +1,5 @@
 import { importShared } from './__federation_fn_import-DM6g2I0y.js';
-import router, { _ as __federation_method_getRemote, a as __federation_method_unwrapDefault, b as _export_sfc } from './__federation_expose_Router-CjmXRACi.js';
+import router, { _ as __federation_method_getRemote, a as __federation_method_unwrapDefault, b as _export_sfc } from './__federation_expose_Router-DbEQXbox.js';
 
 const __federation_var_remote_appHeader = await __federation_method_getRemote("remote_app" , "./Header");
  let Header = __federation_method_unwrapDefault(__federation_var_remote_appHeader); 
