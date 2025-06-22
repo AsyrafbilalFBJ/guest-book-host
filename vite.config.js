@@ -9,7 +9,7 @@ export default defineConfig({
     federation({
       name: 'host-app',
       remotes: {
-          remote_app: "http://localhost:5001/assets/remoteEntry.js",
+          remote_app: "https://asyrafbilalfbj.github.io/guest-book-remote/assets/remoteEntry.js",
       },
       exposes: {
           './router': './src/router/index.js',
@@ -18,9 +18,11 @@ export default defineConfig({
     })
   ],
   build: {
+    outDir: 'docs',
     modulePreload: false,
     target: "esnext",
     minify: false,
     cssCodeSplit: false
-  }
+  },
+  // base: '/guest-book-host/'
 })

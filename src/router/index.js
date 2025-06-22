@@ -6,6 +6,7 @@ import MessagesView from '../pages/MessagesView.vue'
 import AddGuestView from '../pages/AddGuestView.vue'
 import UnauthorizedView from '../pages/UnauthorizedView.vue'
 import store from "remote_app/store"
+import NotFoundView from '../pages/NotFoundView.vue'
 
 const router = createRouter({
     history: createWebHistory(import.meta.env.BASE_URL),
@@ -41,6 +42,10 @@ const router = createRouter({
                 role: 'admin'
             }
         },
+        {
+            path: '/:pathMatch(.*)*', // Route 404 harus paling bawah
+            component: NotFoundView
+        }
     ],
 })
 
