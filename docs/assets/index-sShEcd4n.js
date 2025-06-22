@@ -1,5 +1,43 @@
 import { importShared } from './__federation_fn_import-DM6g2I0y.js';
-import router, { _ as __federation_method_getRemote, a as __federation_method_unwrapDefault, b as _export_sfc } from './__federation_expose_Router-g6G3X4cq.js';
+import router, { _ as __federation_method_getRemote, a as __federation_method_unwrapDefault, b as _export_sfc } from './__federation_expose_Router-KjC_9NOJ.js';
+
+true&&(function polyfill() {
+  const relList = document.createElement("link").relList;
+  if (relList && relList.supports && relList.supports("modulepreload")) {
+    return;
+  }
+  for (const link of document.querySelectorAll('link[rel="modulepreload"]')) {
+    processPreload(link);
+  }
+  new MutationObserver((mutations) => {
+    for (const mutation of mutations) {
+      if (mutation.type !== "childList") {
+        continue;
+      }
+      for (const node of mutation.addedNodes) {
+        if (node.tagName === "LINK" && node.rel === "modulepreload")
+          processPreload(node);
+      }
+    }
+  }).observe(document, { childList: true, subtree: true });
+  function getFetchOpts(link) {
+    const fetchOpts = {};
+    if (link.integrity) fetchOpts.integrity = link.integrity;
+    if (link.referrerPolicy) fetchOpts.referrerPolicy = link.referrerPolicy;
+    if (link.crossOrigin === "use-credentials")
+      fetchOpts.credentials = "include";
+    else if (link.crossOrigin === "anonymous") fetchOpts.credentials = "omit";
+    else fetchOpts.credentials = "same-origin";
+    return fetchOpts;
+  }
+  function processPreload(link) {
+    if (link.ep)
+      return;
+    link.ep = true;
+    const fetchOpts = getFetchOpts(link);
+    fetch(link.href, fetchOpts);
+  }
+}());
 
 const __federation_var_remote_appHeader = await __federation_method_getRemote("remote_app" , "./Header");
  let Header = __federation_method_unwrapDefault(__federation_var_remote_appHeader); 
