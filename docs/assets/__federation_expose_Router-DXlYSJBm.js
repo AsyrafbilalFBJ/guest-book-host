@@ -100,9 +100,34 @@ const _export_sfc = (sfc, props) => {
 
 const __federation_var_remote_appLogin = await __federation_method_getRemote("remote_app" , "./Login");
  let Login = __federation_method_unwrapDefault(__federation_var_remote_appLogin); 
-const _sfc_main$4 = {
+const _sfc_main$5 = {
     components: {
         Login
+    }
+};
+
+const {resolveComponent:_resolveComponent$5,createVNode:_createVNode$5,createElementVNode:_createElementVNode$5,openBlock:_openBlock$5,createElementBlock:_createElementBlock$5} = await importShared('vue');
+
+
+const _hoisted_1$5 = { class: "h-screen" };
+const _hoisted_2$5 = { class: "flex justify-center items-center min-h-screen" };
+
+function _sfc_render$5(_ctx, _cache, $props, $setup, $data, $options) {
+  const _component_Login = _resolveComponent$5("Login");
+
+  return (_openBlock$5(), _createElementBlock$5("div", _hoisted_1$5, [
+    _createElementVNode$5("div", _hoisted_2$5, [
+      _createVNode$5(_component_Login)
+    ])
+  ]))
+}
+const LoginView = /*#__PURE__*/_export_sfc(_sfc_main$5, [['render',_sfc_render$5]]);
+
+const __federation_var_remote_appAddMessage = await __federation_method_getRemote("remote_app" , "./AddMessage");
+ let AddMessage = __federation_method_unwrapDefault(__federation_var_remote_appAddMessage); 
+const _sfc_main$4 = {
+    components: {
+        AddMessage
     }
 };
 
@@ -113,90 +138,96 @@ const _hoisted_1$4 = { class: "h-screen" };
 const _hoisted_2$4 = { class: "flex justify-center items-center min-h-screen" };
 
 function _sfc_render$4(_ctx, _cache, $props, $setup, $data, $options) {
-  const _component_Login = _resolveComponent$4("Login");
+  const _component_AddMessage = _resolveComponent$4("AddMessage");
 
   return (_openBlock$4(), _createElementBlock$4("div", _hoisted_1$4, [
     _createElementVNode$4("div", _hoisted_2$4, [
-      _createVNode$4(_component_Login)
+      _createVNode$4(_component_AddMessage)
     ])
   ]))
 }
-const LoginView = /*#__PURE__*/_export_sfc(_sfc_main$4, [['render',_sfc_render$4]]);
+const AddMessageView = /*#__PURE__*/_export_sfc(_sfc_main$4, [['render',_sfc_render$4]]);
 
-const __federation_var_remote_appAddMessage = await __federation_method_getRemote("remote_app" , "./AddMessage");
- let AddMessage = __federation_method_unwrapDefault(__federation_var_remote_appAddMessage); 
+const __federation_var_remote_appMessages = await __federation_method_getRemote("remote_app" , "./Messages");
+ let Messages = __federation_method_unwrapDefault(__federation_var_remote_appMessages); 
 const _sfc_main$3 = {
     components: {
-        AddMessage
+        Messages
     }
 };
 
 const {resolveComponent:_resolveComponent$3,createVNode:_createVNode$3,createElementVNode:_createElementVNode$3,openBlock:_openBlock$3,createElementBlock:_createElementBlock$3} = await importShared('vue');
 
 
-const _hoisted_1$3 = { class: "h-screen" };
-const _hoisted_2$3 = { class: "flex justify-center items-center min-h-screen" };
+const _hoisted_1$3 = { class: "h-full" };
+const _hoisted_2$3 = { class: "flex flex-col items-center min-h-screen" };
 
 function _sfc_render$3(_ctx, _cache, $props, $setup, $data, $options) {
-  const _component_AddMessage = _resolveComponent$3("AddMessage");
+  const _component_Messages = _resolveComponent$3("Messages");
 
   return (_openBlock$3(), _createElementBlock$3("div", _hoisted_1$3, [
     _createElementVNode$3("div", _hoisted_2$3, [
-      _createVNode$3(_component_AddMessage)
+      _createVNode$3(_component_Messages)
     ])
   ]))
 }
-const AddMessageView = /*#__PURE__*/_export_sfc(_sfc_main$3, [['render',_sfc_render$3]]);
+const MessagesView = /*#__PURE__*/_export_sfc(_sfc_main$3, [['render',_sfc_render$3]]);
 
-const __federation_var_remote_appMessages = await __federation_method_getRemote("remote_app" , "./Messages");
- let Messages = __federation_method_unwrapDefault(__federation_var_remote_appMessages); 
+const __federation_var_remote_appAddGuest = await __federation_method_getRemote("remote_app" , "./AddGuest");
+ let AddGuest = __federation_method_unwrapDefault(__federation_var_remote_appAddGuest); 
 const _sfc_main$2 = {
     components: {
-        Messages
+        AddGuest
     }
 };
 
 const {resolveComponent:_resolveComponent$2,createVNode:_createVNode$2,createElementVNode:_createElementVNode$2,openBlock:_openBlock$2,createElementBlock:_createElementBlock$2} = await importShared('vue');
 
 
-const _hoisted_1$2 = { class: "h-full" };
-const _hoisted_2$2 = { class: "flex flex-col items-center min-h-screen" };
+const _hoisted_1$2 = { class: "h-screen" };
+const _hoisted_2$2 = { class: "flex justify-center items-center min-h-screen" };
 
 function _sfc_render$2(_ctx, _cache, $props, $setup, $data, $options) {
-  const _component_Messages = _resolveComponent$2("Messages");
+  const _component_AddGuest = _resolveComponent$2("AddGuest");
 
   return (_openBlock$2(), _createElementBlock$2("div", _hoisted_1$2, [
     _createElementVNode$2("div", _hoisted_2$2, [
-      _createVNode$2(_component_Messages)
+      _createVNode$2(_component_AddGuest)
     ])
   ]))
 }
-const MessagesView = /*#__PURE__*/_export_sfc(_sfc_main$2, [['render',_sfc_render$2]]);
+const AddGuestView = /*#__PURE__*/_export_sfc(_sfc_main$2, [['render',_sfc_render$2]]);
 
-const __federation_var_remote_appAddGuest = await __federation_method_getRemote("remote_app" , "./AddGuest");
- let AddGuest = __federation_method_unwrapDefault(__federation_var_remote_appAddGuest); 
 const _sfc_main$1 = {
-    components: {
-        AddGuest
-    }
+    
 };
 
-const {resolveComponent:_resolveComponent$1,createVNode:_createVNode$1,createElementVNode:_createElementVNode$1,openBlock:_openBlock$1,createElementBlock:_createElementBlock$1} = await importShared('vue');
+const {createElementVNode:_createElementVNode$1,createTextVNode:_createTextVNode$1,resolveComponent:_resolveComponent$1,withCtx:_withCtx$1,createVNode:_createVNode$1,openBlock:_openBlock$1,createElementBlock:_createElementBlock$1} = await importShared('vue');
 
 
-const _hoisted_1$1 = { class: "h-screen" };
-const _hoisted_2$1 = { class: "flex justify-center items-center min-h-screen" };
+const _hoisted_1$1 = { class: "h-full" };
+const _hoisted_2$1 = { class: "flex flex-col justify-center items-center min-h-screen" };
 
 function _sfc_render$1(_ctx, _cache, $props, $setup, $data, $options) {
-  const _component_AddGuest = _resolveComponent$1("AddGuest");
+  const _component_RouterLink = _resolveComponent$1("RouterLink");
 
   return (_openBlock$1(), _createElementBlock$1("div", _hoisted_1$1, [
     _createElementVNode$1("div", _hoisted_2$1, [
-      _createVNode$1(_component_AddGuest)
+      _cache[1] || (_cache[1] = _createElementVNode$1("p", { class: "font-bold" }, "Access Denied", -1)),
+      _cache[2] || (_cache[2] = _createElementVNode$1("p", null, "You do not have permission to access this page.", -1)),
+      _createVNode$1(_component_RouterLink, {
+        to: "/",
+        class: "btn btn-accent"
+      }, {
+        default: _withCtx$1(() => _cache[0] || (_cache[0] = [
+          _createTextVNode$1("Go back to Home")
+        ])),
+        _: 1
+      })
     ])
   ]))
 }
-const AddGuestView = /*#__PURE__*/_export_sfc(_sfc_main$1, [['render',_sfc_render$1]]);
+const UnauthorizedView = /*#__PURE__*/_export_sfc(_sfc_main$1, [['render',_sfc_render$1]]);
 
 const _sfc_main = {
     
@@ -213,8 +244,8 @@ function _sfc_render(_ctx, _cache, $props, $setup, $data, $options) {
 
   return (_openBlock(), _createElementBlock("div", _hoisted_1, [
     _createElementVNode("div", _hoisted_2, [
-      _cache[1] || (_cache[1] = _createElementVNode("p", { class: "font-bold" }, "Access Denied", -1)),
-      _cache[2] || (_cache[2] = _createElementVNode("p", null, "You do not have permission to access this page.", -1)),
+      _cache[1] || (_cache[1] = _createElementVNode("h1", null, "404 - Halaman Tidak Ditemukan", -1)),
+      _cache[2] || (_cache[2] = _createElementVNode("p", null, "Maaf, halaman yang Anda cari tidak ada.", -1)),
       _createVNode(_component_RouterLink, {
         to: "/",
         class: "btn btn-accent"
@@ -227,7 +258,7 @@ function _sfc_render(_ctx, _cache, $props, $setup, $data, $options) {
     ])
   ]))
 }
-const UnauthorizedView = /*#__PURE__*/_export_sfc(_sfc_main, [['render',_sfc_render]]);
+const NotFoundView = /*#__PURE__*/_export_sfc(_sfc_main, [['render',_sfc_render]]);
 
 const {createWebHistory,createRouter} = await importShared('vue-router');
 const __federation_var_remote_appstore = await __federation_method_getRemote("remote_app" , "./store");
@@ -265,6 +296,11 @@ const router = createRouter({
         needsAuth: true,
         role: "admin"
       }
+    },
+    {
+      path: "/:pathMatch(.*)*",
+      // Route 404 harus paling bawah
+      component: NotFoundView
     }
   ]
 });

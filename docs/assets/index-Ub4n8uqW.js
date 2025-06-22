@@ -1,5 +1,5 @@
 import { importShared } from './__federation_fn_import-DM6g2I0y.js';
-import router, { _ as __federation_method_getRemote, a as __federation_method_unwrapDefault, b as _export_sfc } from './__federation_expose_Router-DbEQXbox.js';
+import router, { _ as __federation_method_getRemote, a as __federation_method_unwrapDefault, b as _export_sfc } from './__federation_expose_Router-DXlYSJBm.js';
 
 true&&(function polyfill() {
   const relList = document.createElement("link").relList;
